@@ -137,8 +137,6 @@ def load_weights_from_FaceNet(FRmodel):
     for name in weights:
         if FRmodel.get_layer(name) != None:
             FRmodel.get_layer(name).set_weights(weights_dict[name])
-        elif model.get_layer(name) != None:
-            model.get_layer(name).set_weights(weights_dict[name])
 
 def load_weights():
     # Set weights path
